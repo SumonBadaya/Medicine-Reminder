@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sb.rad.finaltest">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setAlarmLayout.set_alarm_layout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updateIntent.Update_Layout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MyAlarm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".need_to_buy_medicine"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!-- FIRST ALARM -->
+        <receiver android:name=".alarmF.AlarmReceiver" />
+        <receiver
+            android:name=".alarmF.BootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".alarmF.SecondAlarmService" />
+
+        <!-- SECOND ALARM -->
+        <receiver android:name=".alarmF.SecondAlarmReceiver" />
+        <receiver
+            android:name=".alarmF.SecondAlarmBootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".alarmF.AlarmService" />
+
+        <activity
+            android:name=".About"
+            android:label="Team Information"
+            android:screenOrientation="portrait" />
+        <activity android:name=".all_medicine_list"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".low_medicines"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

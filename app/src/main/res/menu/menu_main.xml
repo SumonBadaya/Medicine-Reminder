@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sb.rad.finaltest.MainActivity">
+
+    <item
+        android:id="@+id/updateButton"
+        android:orderInCategory="101"
+        android:title="UPDATE"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/viewLList"
+        android:orderInCategory="102"
+        android:title="View All"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/viewLowMedicine"
+        android:orderInCategory="103"
+        android:title="Low Medicines"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="104"
+        android:title="About Team"
+        app:showAsAction="never" />
+</menu>
+

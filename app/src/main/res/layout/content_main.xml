@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sb.rad.finaltest.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B39DDB"
+        android:gravity="center">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Medicine Name . . ."
+                android:ems="10"
+                android:id="@+id/medicineName"
+                android:textAlignment="center"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:hint="Stock"
+                    android:textAlignment="center"
+                    android:ems="10"
+                    android:id="@+id/stock"
+                    android:layout_weight=".50" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:hint="Pills Per Dose"
+                    android:ems="10"
+                    android:id="@+id/unitPerDose"
+                    android:textAlignment="center"
+                    android:layout_weight=".50"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/timeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#AD1457"
+                android:background="#7986CB"
+                android:textSize="20sp"
+                android:text="Set Time"/>
+
+                <ListView
+                    android:id="@+id/suggestMedicineListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:footerDividersEnabled="false">
+
+                </ListView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

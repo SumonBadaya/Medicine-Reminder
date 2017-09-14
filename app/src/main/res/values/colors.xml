@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="textViewBackgroundColorDay">#9ccc65</color>
+    <color name="textViewTextColorDay">#795548</color>
+    <color name="sideBarDay">#a69396d8</color>
+
+
+
+    <color name="textViewBackgroundColorNight">#78909C</color>
+    <color name="textViewTextColorNight">#EC407A</color>
+    <color name="sideBarNight">#a6521574</color>
+
+
+    <color name="updateItemTextcolor">#a6521574</color>
+
+
+    <color name="ListviewTextColor">#a6891f28</color>
+
+
+
+</resources>

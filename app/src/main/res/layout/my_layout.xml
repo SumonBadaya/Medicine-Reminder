@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:ems="10"
+            android:id="@+id/medicineName"
+            android:text="Medicine Name"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:textColor="@color/ListviewTextColor"
+            android:textAllCaps="true"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textSize="22sp"
+            android:text="Stock"
+            android:textColor="@color/ListviewTextColor"
+            android:gravity="center"
+            android:id="@+id/currentStock"
+            android:layout_weight=".30"/>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".60">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="20sp"
+                    android:text="Dose Per Day : "
+                    android:textColor="@color/ListviewTextColor"
+                    android:id="@+id/dosePerDay" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Pills Per Dose : "
+                    android:textColor="@color/ListviewTextColor"
+                    android:textSize="20sp"
+                    android:id="@+id/pillPerDose" />
+
+            </LinearLayout>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:textColor="@color/ListviewTextColor"
+                android:background="@drawable/update_layout_bacground"
+                android:text="Time Details"
+                android:padding="5px"
+                android:id="@+id/timeDetails"
+                android:layout_weight=".40"/>
+        </LinearLayout>
+
+</LinearLayout>
